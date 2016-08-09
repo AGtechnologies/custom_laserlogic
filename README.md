@@ -1,2 +1,7 @@
-# laserlogic
-LASER LOGIC (INTERNATIONAL) PTE. LTD.
+## Stock Forecasts
+
+Stock Forecasts
+
+#### License
+
+MIT

@@ -13,11 +13,11 @@ with open('stock_forecasts/__init__.py', 'rb') as f:
 requirements = parse_requirements("requirements.txt", session="")
 
 setup(
-	name='stock_forecasts',
+	name='custom_laserlogic',
 	version=version,
-	description='Stock Forecasts',
-	author='AGT Technologies',
-	author_email='agt.com',
+	description='Custom Reports developed for Laser Logic Internation Pte Ltd',
+	author='AG Technologies Pte Ltd',
+	author_email='info@agtech.com.sg',
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,

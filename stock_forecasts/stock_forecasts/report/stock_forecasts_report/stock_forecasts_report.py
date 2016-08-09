@@ -40,9 +40,9 @@ def get_data(filters):
 		# item = item_map.setdefault(bin.item_code, get_item(bin.item_code))
 		company = warehouse_company.setdefault(bin.warehouse, frappe.db.get_value("Warehouse", bin.warehouse, "company"))
 
-		re_order_qty = item.item_max -  bin.indented_qty - bin.reserved_qty + bin.ordered_qty
+		re_order_qty = item.item_max -  bin.ordered_qty - bin.actual_qty + bin.reserved_qty
 
-		data.append([item.item_code, item.item_name, item.description, item.item_min, item.item_max, bin.indented_qty, bin.ordered_qty, bin.reserved_qty, re_order_qty])
+		data.append([item.item_code, item.item_name, item.description, item.item_min, item.item_max, bin.ordered_qty, bin.reserved_qty, bin.actual_qty, re_order_qty])
 
 	return data
 

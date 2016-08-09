@@ -40,17 +40,18 @@ def get_data(filters):
 		# item = item_map.setdefault(bin.item_code, get_item(bin.item_code))
 		company = warehouse_company.setdefault(bin.warehouse, frappe.db.get_value("Warehouse", bin.warehouse, "company"))
 
-		re_order_qty = item.item_max -  bin.ordered_qty - bin.actual_qty + bin.reserved_qty
+		re_order_qty = item.item_max -  bin.indented_qty - bin.reserved_qty + bin.ordered_qty
 
-		data.append([item.item_code, item.item_name, item.description, item.item_min, item.item_max, bin.ordered_qty, bin.reserved_qty, bin.actual_qty, re_order_qty])
+		data.append([item.item_code, item.item_name, item.description, item.item_min, item.item_max, bin.indented_qty, bin.ordered_qty, bin.reserved_qty, re_order_qty])
 
 	return data
 
 def get_bin_list(filters):
 	conditions = []
-	bin_list = frappe.db.sql("""select item_code, warehouse, sum(actual_qty) as actual_qty , planned_qty, indented_qty,
+	bin_list = frappe.db.sql("""select item_code, warehouse, actual_qty, planned_qty, indented_qty,
 		ordered_qty, reserved_qty, reserved_qty_for_production, projected_qty
-		from tabBin bin {conditions} group by item_code order by item_code""".format(conditions=" where " + " and ".join(conditions) if conditions else ""), as_dict=1)
+		from tabBin bin {conditions} order by item_code, warehouse
+		""".format(conditions=" where " + " and ".join(conditions) if conditions else ""), as_dict=1)
 
 	return bin_list
 

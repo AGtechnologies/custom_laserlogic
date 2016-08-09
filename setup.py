@@ -15,7 +15,7 @@ requirements = parse_requirements("requirements.txt", session="")
 setup(
 	name='custom_laserlogic',
 	version=version,
-	description='Customisation for Laser Logic International Pte Ltd',
+	description='Stock Forecast Report',
 	author='AG Technologies Pte Ltd',
 	author_email='info@agtech.com.sg',
 	packages=find_packages(),

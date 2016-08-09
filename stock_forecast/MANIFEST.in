@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include custom_benchnboard *.css
+recursive-include custom_benchnboard *.csv
+recursive-include custom_benchnboard *.html
+recursive-include custom_benchnboard *.ico
+recursive-include custom_benchnboard *.js
+recursive-include custom_benchnboard *.json
+recursive-include custom_benchnboard *.md
+recursive-include custom_benchnboard *.png
+recursive-include custom_benchnboard *.py
+recursive-include custom_benchnboard *.svg
+recursive-include custom_benchnboard *.txt
+recursive-exclude custom_benchnboard *.pyc

@@ -1,0 +1,40 @@
+<div style="margin-bottom: 7px;" class="text-center">
+	{%= frappe.boot.letter_heads[frappe.defaults.get_default("letter_head")] %}
+</div>
+<h2 class="text-center">FORECAST REPORT QTY</h2>
+
+<h3 class="text-right">
+	{%= dateutil.str_to_user(filters.report_date) %}
+</h3>
+<hr>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th style="width: 15%">{%= __("ITEM NO") %}</th>
+			<th style="width: 15%">{%= __("ALT ITEM NO") %}</th>
+			<th style="width: 40%">{%= __("ITEM DESCRIPTION") %}</th>
+			<th style="width: 15%">{%= __("MIN") %}</th>
+			<th style="width: 15%">{%= __("MAX") %}</th>
+			<th style="width: 15%">{%= __("PO") %}</th>
+			<th style="width: 40%">{%= __("SO") %}</th>
+			<th style="width: 15%">{%= __("ON HAND") %}</th>
+			<th style="width: 15%">{%= __("Reorder Quantity") %}</th>
+				
+		</tr>
+	</thead>
+	<tbody>
+		{% for(var i=0, l=data.length; i<l; i++) { %}
+			<tr>
+				<td>{%= data[i][__("ITEM NO")] %}</td>
+				<td>{%= data[i][__("ALT ITEM NO")] %}</td>
+				<td>{%= data[i][__("ITEM DESCRIPTION")] %}</td>
+				<td>{%= data[i][__("MIN")] %}</td>
+				<td>{%= data[i][__("MAX")] %}</td>
+				<td>{%= data[i][__("PO")] %}</td>
+				<td>{%= data[i][__("SO")] %}</td>
+				<td>{%= data[i][__("ON HAND")] %}</td>
+				<td>{%= data[i][__("Reorder Quantity")] %}</td>
+			</tr>
+		{% } %}
+	</tbody>
+</table>

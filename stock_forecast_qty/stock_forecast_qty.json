@@ -1,0 +1,17 @@
+{
+ "add_total_row": 1, 
+ "apply_user_permissions": 1, 
+ "creation": "2016-08-05 18:21:56", 
+ "docstatus": 0, 
+ "doctype": "Report", 
+ "idx": 1, 
+ "is_standard": "Yes", 
+ "modified": "2016-08-05 07:18:17.348468", 
+ "modified_by": "Administrator", 
+ "module": "Stock", 
+ "name": "Stock Forecast Qty", 
+ "owner": "Administrator", 
+ "ref_doctype": "Item", 
+ "report_name": "Stock Forecast Qty", 
+ "report_type": "Script Report"
+}

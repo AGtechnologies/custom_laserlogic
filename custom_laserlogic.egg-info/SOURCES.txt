@@ -16,14 +16,7 @@ custom_laserlogic.egg-info/top_level.txt
 custom_laserlogic/config/__init__.py
 custom_laserlogic/config/desktop.py
 custom_laserlogic/config/docs.py
-custom_laserlogic/stock_forecast/__init__.py
-custom_laserlogic/stock_forecast/doctype/__init__.py
-custom_laserlogic/stock_forecast/doctype/stock_forecasts/__init__.py
-custom_laserlogic/stock_forecast/doctype/stock_forecasts/stock_forecasts.py
-custom_laserlogic/stock_forecast/doctype/stock_forecasts/test_stock_forecasts.py
-custom_laserlogic/stock_forecast/report/__init__.py
-custom_laserlogic/stock_forecast/report/stock_forecasts_report/__init__.py
-custom_laserlogic/stock_forecast/report/stock_forecasts_report/stock_forecasts_report.py
+custom_laserlogic/custom_laserlogic/__init__.py
 custom_laserlogic/templates/__init__.py
 custom_laserlogic/templates/generators/__init__.py
 custom_laserlogic/templates/pages/__init__.py

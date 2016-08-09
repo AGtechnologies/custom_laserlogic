@@ -2,13 +2,13 @@
 from __future__ import unicode_literals
 from . import __version__ as app_version
 
-app_name = "stock_forecasts"
-app_title = "Stock Forecasts"
-app_publisher = "AGT Technologies"
-app_description = "Stock Forecasts"
+app_name = "custom_laserlogic"
+app_title = "Laser Logic Customisations"
+app_publisher = "AG Technologies Pte Ltd"
+app_description = "Stock Forecast Report"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "agt.com"
+app_email = "info@agtech.com.sg"
 app_license = "MIT"
 
 fixtures = ["Custom Field"]

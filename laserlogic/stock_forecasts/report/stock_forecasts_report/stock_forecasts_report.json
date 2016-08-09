@@ -9,7 +9,7 @@
  "is_standard": "Yes", 
  "modified": "2016-08-05 19:53:54.646276", 
  "modified_by": "Administrator", 
- "module": "Stock Forecasts", 
+ "module": "Stock", 
  "name": "Stock Forecasts Report", 
  "owner": "Administrator", 
  "ref_doctype": "Item", 

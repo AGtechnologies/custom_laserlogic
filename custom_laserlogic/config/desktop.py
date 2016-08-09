@@ -5,10 +5,10 @@ from frappe import _
 def get_data():
 	return [
 		{
-			"module_name": "Stock Forecasts",
+			"module_name": "Laser Logic",
 			"color": "grey",
 			"icon": "octicon octicon-file-directory",
 			"type": "module",
-			"label": _("Stock Forecasts")
+			"label": _("Laser Logic")
 		}
 	]

@@ -1,1 +1,1 @@
-stock_forecast
+Stock Forecasts
